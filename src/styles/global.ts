@@ -1,12 +1,14 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
+
+// Style Reset
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-
+ // Setting font size to 10px
   html {
     font-size: 62.5%
   }

@@ -7,6 +7,7 @@ import Document, {
 } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
+// Template for using styled compontes in SSR
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const sheet = new ServerStyleSheet()
@@ -33,7 +34,7 @@ export default class MyDocument extends Document {
       sheet.seal()
     }
   }
-
+  // Custom template
   render() {
     return (
       <Html lang="pt-BR">

@@ -12,12 +12,31 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `src/components/Main/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Storybook
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+npm run storybook #To open the storybook
+# or
+npm run build-storybook #To create a static storybook folder
+```
+## Testing
+```bash
+npm run test
+```
+## Using plop to generate a component
+```bash
+npm run generate ComponentName
+```
 
+## Production
+```bash
+npm run build
+```
+
+## Commiting changes
+All commits need to pass in eslint rules and jest tests
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
